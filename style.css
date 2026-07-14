@@ -244,3 +244,96 @@ footer { background: var(--lake-dark); color: white; text-align: center; padding
     text-align: left;
   }
 }
+/* =========================================
+   MEMBERSHIP SECTION
+   ========================================= */
+
+.membership-section {
+  padding: 5rem 6vw;
+  background: var(--cream);
+}
+
+.membership-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.75rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #ead7bb;
+  border-radius: 30px;
+  box-shadow: 0 12px 30px rgba(45, 71, 67, 0.06);
+}
+
+.membership-inner h2 {
+  margin-bottom: 1.5rem;
+}
+
+.membership-intro {
+  margin-bottom: 1.75rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+.membership-options {
+  display: grid;
+  gap: 1rem;
+}
+
+.membership-option {
+  padding: 1.15rem 1.4rem;
+  background: var(--paper);
+  border: 1px solid #ecd9bb;
+  border-radius: 20px;
+}
+
+.membership-option p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.membership-benefit {
+  margin-top: 1.25rem;
+  padding: 1.35rem 1.5rem;
+  background: #edf4f3;
+  border-left: 7px solid var(--lake);
+  border-radius: 12px;
+}
+
+.membership-benefit h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.45rem;
+}
+
+.membership-benefit p {
+  margin: 0;
+}
+
+.membership-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.95rem 1.65rem;
+  color: white;
+  background: var(--lake-dark);
+  border-radius: 40px;
+  font-size: 1.15rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.membership-button:hover,
+.membership-button:focus {
+  background: var(--rust);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .membership-inner {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .membership-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
