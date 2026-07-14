@@ -79,3 +79,64 @@ footer { background: var(--lake-dark); color: white; text-align: center; padding
   font-weight: 800;
   color: var(--lake-dark);
 }
+/* Tara's Wharf lodging section */
+
+.stay-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  gap: 3rem;
+  align-items: center;
+  background: #f4f8f8;
+}
+
+.stay-lead {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.stay-highlights {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.stay-highlight {
+  padding: 1.25rem;
+  background: #ffffff;
+  border-top: 4px solid #5c8d95;
+  border-radius: 8px;
+  box-shadow: 0 5px 18px rgba(31, 60, 67, 0.08);
+}
+
+.stay-highlight h3 {
+  margin-top: 0;
+  color: #315b63;
+}
+
+.stay-buttons {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text-button {
+  background: transparent;
+  color: #315b63;
+  border: 2px solid #315b63;
+}
+
+.reservation-note {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+@media (max-width: 850px) {
+  .stay-section {
+    grid-template-columns: 1fr;
+  }
+
+  .stay-highlights {
+    grid-template-columns: 1fr;
+  }
+}
