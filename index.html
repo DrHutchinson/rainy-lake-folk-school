@@ -109,11 +109,11 @@
      Complete self-contained section
 ========================================== -->
 
-<div id="wharf-events">
+<div id="events">
 
 <style>
 
-#wharf-events {
+#events {
     --green: #2f4540;
     --teal: #548891;
     --rust: #9f4f32;
@@ -132,33 +132,33 @@
     line-height: 1.6;
 }
 
-#wharf-events *,
-#wharf-events *::before,
-#wharf-events *::after {
+#events *,
+#events *::before,
+#events *::after {
     box-sizing: border-box;
 }
 
 /* PAGE HEADING */
 
-#wharf-events .events-intro {
+#vents .events-intro {
     text-align: center;
     max-width: 800px;
     margin: 0 auto 35px;
 }
 
-#wharf-events .events-intro h2 {
+#events .events-intro h2 {
     font-size: clamp(2rem, 5vw, 3rem);
     color: var(--green);
     margin: 0 0 12px;
     line-height: 1.2;
 }
 
-#wharf-events .events-intro p {
+#events .events-intro p {
     font-size: 1.1rem;
     margin: 0 auto;
 }
 
-#wharf-events .accent-line {
+#events .accent-line {
     width: 85px;
     height: 4px;
     background: var(--rust);
@@ -168,7 +168,7 @@
 
 /* EVENT GRID */
 
-#wharf-events .events-grid {
+#events .events-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 22px;
@@ -177,7 +177,7 @@
 
 /* EVENT CARDS */
 
-#wharf-events .event-card {
+#events .event-card {
     background: #ffffff;
     border: 1px solid var(--sand);
     border-radius: 16px;
@@ -186,12 +186,12 @@
     min-width: 0;
 }
 
-#wharf-events .event-header {
+#events .event-header {
     padding: 22px 25px;
     color: #ffffff;
 }
 
-#wharf-events .event-header p {
+#events .event-header p {
     font-family: Arial, sans-serif;
     font-size: .78rem;
     text-transform: uppercase;
@@ -201,51 +201,51 @@
     color: #ffffff;
 }
 
-#wharf-events .event-header h3 {
+#events .event-header h3 {
     color: #ffffff;
     font-size: 1.65rem;
     line-height: 1.2;
     margin: 0;
 }
 
-#wharf-events .fall {
+#events .fall {
     background: var(--rust);
 }
 
-#wharf-events .holiday {
+#events .holiday {
     background: var(--green);
 }
 
-#wharf-events .winter {
+#events .winter {
     background: var(--teal);
 }
 
-#wharf-events .event-content {
+#events .event-content {
     padding: 24px 26px;
 }
 
-#wharf-events .event-content p {
+#events .event-content p {
     margin: 0 0 15px;
 }
 
-#wharf-events .event-content h4 {
+#events .event-content h4 {
     color: var(--green);
     font-size: 1.12rem;
     margin: 22px 0 8px;
 }
 
-#wharf-events .event-content ul {
+#events .event-content ul {
     padding-left: 21px;
     margin: 8px 0 18px;
 }
 
-#wharf-events .event-content li {
+#events .event-content li {
     margin-bottom: 8px;
 }
 
 /* DATE AND LOCATION */
 
-#wharf-events .event-details {
+#events .event-details {
     background: var(--cream);
     padding: 14px 16px;
     border-radius: 10px;
@@ -258,13 +258,13 @@
     margin: 0 0 5px;
 }
 
-#wharf-events .event-details p:last-child {
+#events .event-details p:last-child {
     margin-bottom: 0;
 }
 
 /* SPECIAL NOTICES */
 
-#wharf-events .event-note {
+#events .event-note {
     background: var(--cream);
     border-left: 4px solid var(--rust);
     padding: 15px 17px;
@@ -272,41 +272,41 @@
     border-radius: 6px;
 }
 
-#wharf-events .event-note p {
+#events .event-note p {
     margin: 5px 0;
 }
 
 /* WINTER RETREATS */
 
-#wharf-events .winter-section {
+#events .winter-section {
     margin-top: 25px;
 }
 
-#wharf-events .retreat-intro {
+#events .retreat-intro {
     padding: 20px 25px 0;
 }
 
-#wharf-events .retreat-grid {
+#events .retreat-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
     padding: 22px;
 }
 
-#wharf-events .retreat-card {
+#events .retreat-card {
     background: var(--cream);
     border-radius: 12px;
     padding: 22px;
     border: 1px solid var(--sand);
 }
 
-#wharf-events .retreat-card h4 {
+#events .retreat-card h4 {
     font-size: 1.35rem;
     color: var(--green);
     margin: 0 0 8px;
 }
 
-#wharf-events .retreat-date {
+#events .retreat-date {
     font-family: Arial, sans-serif;
     font-weight: bold;
     color: var(--rust);
@@ -314,11 +314,11 @@
     margin-bottom: 15px;
 }
 
-#wharf-events .retreat-card ul {
+#events .retreat-card ul {
     padding-left: 20px;
 }
 
-#wharf-events .retreat-card li {
+#events .retreat-card li {
     margin-bottom: 8px;
 }
 
@@ -326,28 +326,28 @@
 
 @media (max-width: 760px) {
 
-    #wharf-events {
+    #events {
         padding: 18px 12px 35px;
     }
 
-    #wharf-events .events-grid,
-    #wharf-events .retreat-grid {
+    #events .events-grid,
+    #events .retreat-grid {
         grid-template-columns: 1fr;
     }
 
-    #wharf-events .event-content {
+    #events .event-content {
         padding: 20px;
     }
 
-    #wharf-events .event-header {
+    #events .event-header {
         padding: 20px;
     }
 
-    #wharf-events .retreat-grid {
+    #events .retreat-grid {
         padding: 16px;
     }
 
-    #wharf-events .retreat-intro {
+    #events .retreat-intro {
         padding: 20px 20px 0;
     }
 }
@@ -381,7 +381,7 @@ added as we grow!
 <div class="event-details">
 <p><strong>Date:</strong> Saturday, October 10, 2026</p>
 <p><strong>Time:</strong> 1:00–6:00 PM</p>
-<p><strong>Location:</strong> The Wharf and participating businesses throughout Ranier, Minnesota</p>
+<p><strong>Location:</strong> The Folk School and participating businesses throughout Ranier, Minnesota</p>
 </div>
 <p>
 Join us for a festive afternoon celebrating Ranier's
