@@ -103,38 +103,454 @@
     </article>
   </div>
 </section>
-    <section id="Events" class="Events">
-  <div class="container">
-    <p class="eyebrow">Events</p>
-    <h2>Events and Gatherings</h2>
-    <p class="section-intro">
-      Join us for upcoming community gatherings, celebrations,
-      workshops, and special events at The Wharf Folk School.
-      More classes and activities will be added as plans are finalized.
-    </p>
-        <a class="button" href="events.html">
-          Event Details
-        </a>
-      </article>
-      <article class="event-card">
-        <p class="event-date">October 10, 2026</p>
+   
+<!-- ==========================================
+     THE WHARF - EVENTS AND GATHERINGS
+     Complete self-contained section
+========================================== -->
 
-        <h3>Rainier Oktoberfest &amp; New Business Day</h3>
+<div id="wharf-events">
 
-        <p>
-          The Wharf Folk School &amp; Event Center will be participating in
-          Ranier's Oktoberfest and New Business Day celebration.
-        </p>
+<style>
 
-        <p>
-          Spend the day celebrating local businesses, arts, food, community,
-          and fall along Rainy Lake.
-        </p>
+#wharf-events {
+    --green: #2f4540;
+    --teal: #548891;
+    --rust: #9f4f32;
+    --cream: #fff8ef;
+    --sand: #f3e6d2;
+    --ink: #243233;
 
-        <p>
-          More details about The Wharf's participation and activities
-          will be announced as plans are finalized.
-        </p>
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 18px 45px;
+    box-sizing: border-box;
+
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--ink);
+    line-height: 1.6;
+}
+
+#wharf-events *,
+#wharf-events *::before,
+#wharf-events *::after {
+    box-sizing: border-box;
+}
+
+/* PAGE HEADING */
+
+#wharf-events .events-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 35px;
+}
+
+#wharf-events .events-intro h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--green);
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
+
+#wharf-events .events-intro p {
+    font-size: 1.1rem;
+    margin: 0 auto;
+}
+
+#wharf-events .accent-line {
+    width: 85px;
+    height: 4px;
+    background: var(--rust);
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+/* EVENT GRID */
+
+#wharf-events .events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    align-items: start;
+}
+
+/* EVENT CARDS */
+
+#wharf-events .event-card {
+    background: #ffffff;
+    border: 1px solid var(--sand);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 16px rgba(0,0,0,0.07);
+    min-width: 0;
+}
+
+#wharf-events .event-header {
+    padding: 22px 25px;
+    color: #ffffff;
+}
+
+#wharf-events .event-header p {
+    font-family: Arial, sans-serif;
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 0 0 6px;
+    color: #ffffff;
+}
+
+#wharf-events .event-header h3 {
+    color: #ffffff;
+    font-size: 1.65rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+#wharf-events .fall {
+    background: var(--rust);
+}
+
+#wharf-events .holiday {
+    background: var(--green);
+}
+
+#wharf-events .winter {
+    background: var(--teal);
+}
+
+#wharf-events .event-content {
+    padding: 24px 26px;
+}
+
+#wharf-events .event-content p {
+    margin: 0 0 15px;
+}
+
+#wharf-events .event-content h4 {
+    color: var(--green);
+    font-size: 1.12rem;
+    margin: 22px 0 8px;
+}
+
+#wharf-events .event-content ul {
+    padding-left: 21px;
+    margin: 8px 0 18px;
+}
+
+#wharf-events .event-content li {
+    margin-bottom: 8px;
+}
+
+/* DATE AND LOCATION */
+
+#wharf-events .event-details {
+    background: var(--cream);
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: .95rem;
+}
+
+#wharf-events .event-details p {
+    margin: 0 0 5px;
+}
+
+#wharf-events .event-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* SPECIAL NOTICES */
+
+#wharf-events .event-note {
+    background: var(--cream);
+    border-left: 4px solid var(--rust);
+    padding: 15px 17px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+#wharf-events .event-note p {
+    margin: 5px 0;
+}
+
+/* WINTER RETREATS */
+
+#wharf-events .winter-section {
+    margin-top: 25px;
+}
+
+#wharf-events .retreat-intro {
+    padding: 20px 25px 0;
+}
+
+#wharf-events .retreat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    padding: 22px;
+}
+
+#wharf-events .retreat-card {
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 22px;
+    border: 1px solid var(--sand);
+}
+
+#wharf-events .retreat-card h4 {
+    font-size: 1.35rem;
+    color: var(--green);
+    margin: 0 0 8px;
+}
+
+#wharf-events .retreat-date {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: var(--rust);
+    font-size: .95rem;
+    margin-bottom: 15px;
+}
+
+#wharf-events .retreat-card ul {
+    padding-left: 20px;
+}
+
+#wharf-events .retreat-card li {
+    margin-bottom: 8px;
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+    #wharf-events {
+        padding: 18px 12px 35px;
+    }
+
+    #wharf-events .events-grid,
+    #wharf-events .retreat-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #wharf-events .event-content {
+        padding: 20px;
+    }
+
+    #wharf-events .event-header {
+        padding: 20px;
+    }
+
+    #wharf-events .retreat-grid {
+        padding: 16px;
+    }
+
+    #wharf-events .retreat-intro {
+        padding: 20px 20px 0;
+    }
+}
+
+</style>
+
+<!-- =====================================
+     INTRODUCTION
+===================================== -->
+<div class="events-intro">
+<h2>Events and Gatherings</h2>
+<div class="accent-line"></div>
+<p>
+Join us for upcoming community gatherings, celebrations,
+workshops, and special events at The Wharf Folk School
+&amp; Event Center. More classes and activities will be
+added as we grow!
+</p>
+</div>
+<!-- =====================================
+     FALL AND CHRISTMAS EVENTS
+===================================== -->
+<div class="events-grid">
+<!-- OKTOBERFEST -->
+<article class="event-card">
+<div class="event-header fall">
+<p>Fall 2026</p>
+<h3>Oktoberfest in Ranier</h3>
+</div>
+<div class="event-content">
+<div class="event-details">
+<p><strong>Date:</strong> Saturday, October 10, 2026</p>
+<p><strong>Time:</strong> 1:00–6:00 PM</p>
+<p><strong>Location:</strong> The Wharf and participating businesses throughout Ranier, Minnesota</p>
+</div>
+<p>
+Join us for a festive afternoon celebrating Ranier's
+new businesses, local artists, makers, and the
+wonderful community along Rainy Lake!
+</p>
+<p>
+This community celebration brings together The Wharf
+Folk School &amp; Event Center, Backus Community Center,
+Cake &amp; Crust Bakery, The Wild Muse, Looney's,
+and Rainy Lake Inn &amp; Suites at Tara's Wharf.
+</p>
+<h4>What to Expect</h4>
+<ul>
+<li>Music, food, and fall festivities</li>
+<li>Local artists, makers, and vendors</li>
+<li>Pop-up markets featuring local goods</li>
+<li>Creative workshops and hands-on activities</li>
+<li>Opportunities to explore Ranier's new businesses</li>
+</ul>
+<h4>Workshops at The Wharf</h4>
+<p>
+The Wharf will offer hands-on creative activities,
+including:
+</p>
+<ul>
+<li>Mask making</li>
+<li>Pumpkin painting</li>
+<li>Possible tack-making and paddle-making workshops</li>
+</ul>
+<div class="event-note">
+<strong>Calling All Artists and Vendors!</strong>
+<p>
+Artists, farmers, makers, and local vendors are invited
+to showcase and sell their goods during Oktoberfest.
+</p>
+</div>
+</div>
+</article>
+<!-- CHRISTMAS MARKET -->
+<article class="event-card">
+<div class="event-header holiday">
+<p>Holiday 2026</p>
+<h3>Christmas Market</h3>
+</div>
+<div class="event-content">
+<div class="event-details">
+<p><strong>Date:</strong> Saturday, December 12, 2026</p>
+<p><strong>Location:</strong> Backus Community Center</p>
+<p><strong>Organized by:</strong> Backus Community Center and The Wharf Folk School &amp; Event Center</p>
+</div>
+<p>
+Celebrate the holiday season with a festive Christmas
+Market bringing together local artists, musicians,
+makers, and community members.
+</p>
+<p>
+Organized in collaboration with Backus Community Center,
+this special gathering will celebrate creativity,
+local talent, and the spirit of the season.
+</p>
+<h4>Market Highlights</h4>
+<ul>
+<li>Community art exhibit</li>
+<li>Musical performances</li>
+<li>Food and hot beverages</li>
+<li>Local artists and vendors selling their goods</li>
+<li>A welcoming opportunity to gather with friends and neighbors</li>
+</ul>
+<div class="event-note">
+<strong>Celebrate Local!</strong>
+<p>
+Enjoy handmade goods, community art, music, and
+holiday cheer while supporting local artists and
+businesses.
+</p>
+</div>
+<p style="margin-top:20px;">
+Additional information, including event times and
+vendor details, will be announced as plans are finalized.
+</p>
+</div>
+</article>
+</div>
+<!-- =====================================
+     WINTER RETREATS
+===================================== -->
+<div class="winter-section">
+<article class="event-card">
+<div class="event-header winter">
+<p>Winter 2027</p>
+<h3>Winter Retreats at The Wharf</h3>
+</div>
+<div class="retreat-intro">
+<p>
+Winter at Rainy Lake is a special time to slow down,
+reconnect, and discover something new.
+</p>
+<p>
+The Wharf is planning two seasonal retreats featuring
+wellness, creativity, practical learning, traditional
+skills, and community.
+</p>
+</div>
+<div class="retreat-grid">
+<!-- WOMEN'S RETREAT -->
+<div class="retreat-card">
+<h4>Women's Refresh Retreat</h4>
+<div class="retreat-date">
+Late January 2027
+</div>
+<p>
+A refreshing winter retreat designed to provide
+time for creative reflection, relaxation, and
+personal wellness.
+</p>
+<strong>Retreat Activities</strong>
+<ul>
+<li>Creative reflection activities</li>
+<li>Esthetician services</li>
+<li>Health and wellness workshops</li>
+<li>Opportunities for relaxation and connection</li>
+</ul>
+<p>
+<strong>Location:</strong><br>
+The Wharf Folk School &amp; Event Center
+</p>
+<p>
+Exact dates and retreat details will be announced
+as plans are finalized.
+</p>
+</div>
+<!-- MEN'S RETREAT -->
+<div class="retreat-card">
+<h4>Men's Winter Retreat</h4>
+<div class="retreat-date">
+Late February 2027
+</div>
+<p>
+A winter retreat bringing together health and
+wellness, traditional handcrafts, practical
+skills, and learning opportunities with local
+tradespeople.
+</p>
+
+<strong>Retreat Activities</strong>
+
+<ul>
+<li>Health and wellness workshops</li>
+<li>Woodworking</li>
+<li>Handcrafts and traditional skills</li>
+<li>Learning opportunities featuring local trades</li>
+</ul>
+<p>
+<strong>Location:</strong><br>
+The Wharf Folk School &amp; Event Center
+</p>
+
+<p>
+Exact dates and retreat details will be announced
+as plans are finalized.
+</p>
+</div>
+</div>
+</article>
+</div>
+</div>
+<!-- END WHARF EVENTS -->
+
 
         <a class="button" href="events.html">
           Learn More
